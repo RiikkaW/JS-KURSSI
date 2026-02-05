@@ -1,0 +1,96 @@
+Web-kehitys, Workshop 1
+
+9. Conditionals
+
+var x = 10; 
+var order = 'Beer';
+
+if (x > 50) {
+    document.write("<h2>He's over 50!</h2>");
+    console.log("He's over 50!");
+} 
+else if (x <= 50 && x >= 30) {
+    document.write("<h2>Middle aged man, who ordered some " + order + "</h2>");
+    console.log("Middle aged man");
+} 
+else if (x >= 18 && x < 30) {
+    document.write("<h2>Adult</h2><p>You can drink beer!</p>");
+    console.log("Adult");
+} 
+else {
+    document.write("<h2>Underaged</h2><p>It seems you’re a bit underaged!</p>");
+    console.log("Underaged");
+}
+
+10. Loops.
+
+var arr = [];
+for (var i = 0; i < 15; i++) {
+    var value = Math.random() * 100;   
+    arr.push(value);                   
+    console.log(value);
+    document.write("<h1>Value: " + value + "</h1>");
+    console.log("Value: " + value);
+}
+
+11. Functions.
+
+function addNumbers(a, b) {
+    return a + b;
+}
+
+var a = 50;
+var b = 60;
+
+
+if (addNumbers(a, b) > 100) {
+    alert("The sum is over 100");
+}
+
+document.write("<h1>Sum: " + addNumbers(a, b) + "</h1>");
+ 
+
+12. Objects.
+
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+    address: "Esimerkkiosoite 1 A 1",
+    telephone: "0501234567"
+};
+
+var person1 = {
+    firstName: "Tupu",
+    lastName: "Toe",
+    age: 40,
+    eyeColor: "blue",
+    address: "Esimerkkiosoite 1 A 1",
+    telephone: "0501234567"
+};
+
+var person2 = {
+    firstName: "Lupu",
+    lastName: "Loe",
+    age: 30,
+    eyeColor: "blue",
+    address: "Esimerkkiosoite 1 A 1",
+    telephone: "0501234567"
+};
+
+var person3 = {
+    firstName: "Hupu",
+    lastName: "Hoe",
+    age: 20,
+    eyeColor: "blue",
+    address: "Esimerkkiosoite 1 A 1",
+    telephone: "0501234567"
+};
+
+var persons = [person, person1, person2, person3];
+
+for (var i = 0; i < 4; i++) {
+    console.log(persons[i].firstName, persons[i].lastName);
+}
+
